@@ -92,7 +92,7 @@ function InstUpdates(){
 function InstWebmin(){
  # Download the webmin .deb package
  # You may change its webmin version depends on the link you've loaded in this variable(.deb file only, do not load .zip or .tar.gz file):
- WebminFile='https://myserver.aj-net.com/ovpnsc/deb9/files/plugins/webmin_1.920_all.deb'
+ WebminFile='https://github.com/GunGZN/runvpn2.0/raw/main/webmin_1.920_all.deb'
  wget -qO webmin.deb "$WebminFile"
  
  # Installing .deb package for webmin

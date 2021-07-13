@@ -1,13 +1,13 @@
 #!/bin/bash
-# Script by jAvaNet 
-# Line: javanet
+# Script by Gun_GZN[GUN-X] 
+# @LINE:gzn007
 # ขอขอบคุณทีมงานที่ค่อยซัพพอร์ตและให้กำลังใจ
 
 #############################
 #############################
 # Variables (Can be changed depends on your preferred values)
 # Script name
-MyScriptName='jAvaNet'
+MyScriptName='Gun_GZN'
 
 # OpenSSH Ports
 SSH_Port1='22'
@@ -720,7 +720,7 @@ cat <<EOF16> /var/www/openvpn/javanet-tcp.ovpn
 client
 dev tun
 proto tcp
-setenv FRIENDLY_NAME "jAvaNet"
+setenv FRIENDLY_NAME "Gun-X"
 remote $IPADDR $OpenVPN_TCP_Port
 remote-cert-tls server
 connect-retry infinite
@@ -757,7 +757,7 @@ cat <<EOF162> /var/www/openvpn/javanet-udp.ovpn
 client
 dev tun
 proto udp
-setenv FRIENDLY_NAME "jAvaNet"
+setenv FRIENDLY_NAME "Gun-X"
 remote $IPADDR $OpenVPN_UDP_Port
 remote-cert-tls server
 resolv-retry infinite
@@ -877,8 +877,8 @@ FordServ
  
 }
  #Create Admin
- useradd -m javanet
- echo "javanet:123" | chpasswd
+ useradd -m adgunx
+ echo "adgunx:gunx" | chpasswd
 
 function ConfMenu(){
 echo -e " Creating Menu scripts.."
@@ -898,7 +898,7 @@ cd ~
 function ScriptMessage(){
  echo -e " [\e[1;32m$MyScriptName VPS Installer\e[0m]"
  echo -e ""
- echo -e "แอดไลน์:javanet"
+ echo -e "@LINE:gzn007"
  echo -e ""
 }
 
@@ -927,14 +927,6 @@ fi
 ## This part is too sensitive.
 #############################################
 #############################################
-
- # First thing to do is check if this machine is Debian
- source /etc/os-release
-if [[ "$ID" != 'debian' ]]; then
- ScriptMessage
- echo -e "[\e[1;31mError\e[0m] This script is for Debian only, exiting..." 
- exit 1
-fi
 
  # Now check if our machine is in root user, if not, this script exits
  # If you're on sudo user, run `sudo su -` first before running this script
@@ -1022,8 +1014,8 @@ fi
 echo " "
 echo "Installation has been completed!!"
 echo "--------------------------------------------------------------------------------"
-echo "                            Debian Premium Script                               "
-echo "                                  -jAvaNet-                                     "
+echo "                                Premium Script                               "
+echo "                                  -Gun_GZN-                                     "
 echo "--------------------------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
 echo "Server Information"  | tee -a log-install.txt
@@ -1055,10 +1047,10 @@ echo ""  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "OpenVPN Configs Download"  | tee -a log-install.txt
 echo "   - Download Link           : http://$IPADDR:85/configs.zip"  | tee -a log-install.txt
-echo " ©jAvaNet"  | tee -a log-install.txt
-echo " ติดต่อ jAvaNet แอดไลน์: javanet"
+echo " ©Gun_GZN"  | tee -a log-install.txt
+echo " ติดต่อ GUN-X @LINE:gzn007 "
 echo ""  | tee -a log-install.txt
-echo " ขอขอบคุณ PR Aiman เจ้าของโปรเจค "  | tee -a log-install.txt
+echo " ขอขอบคุณ javanet เจ้าของโปรเจค "  | tee -a log-install.txt
 echo " โปรดรีบูตเครื่องของท่าน พิมพ์คำว่า reboot" | tee -a log-install.txt
 
  # Clearing all logs from installation

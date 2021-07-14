@@ -997,7 +997,7 @@ fi
  mv /tmp/abonv_mydns_id /etc/bonveio/my_domain_id
  rm -rf /tmp/abonv*
 
- # VPS Menu script v1.0
+ # VPS Menu script v2.0
  ConfMenu
  
  # Setting server local time

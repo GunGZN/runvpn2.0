@@ -888,10 +888,11 @@ FordServ
  echo "adgunx:gunx" | chpasswd
 
  # download script
-cd /usr/bin
-wget -q -O m "https://raw.githubusercontent.com/teamvpn/SSHPLUS24/master/Install/list"
-chmod +x m
-
+cd /usr/local/bin
+wget -q -O m "https://raw.githubusercontent.com/GunGZN/AxG/main/Menu"
+chmod +x /usr/local/bin/m
+	wget -O /usr/local/bin/Auto-Delete-Client "https://raw.githubusercontent.com/MyGatherBk/PURE/master/Auto-Delete-Client"
+	chmod +x /usr/local/bin/Auto-Delete-Client
 
 function ConfMenu(){
 echo -e " Creating Menu scripts.."
